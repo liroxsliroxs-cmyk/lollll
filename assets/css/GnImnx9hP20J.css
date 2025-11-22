@@ -1,0 +1,178 @@
+/*
+------------------------------
+ 		Estilos del Div de carga
+------------------------------
+*/
+.clase_cargando {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	background: transparent;
+	z-index: 1000;
+}
+
+.imagen {
+	position: absolute;
+	visibility: hidden;
+	display: block;
+	top: 30%;
+	left: 35%;
+	width: 50%;
+	height: 50%;
+	background-image: url(../images/Wuqrzxnco2pG.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	z-index: 1001;
+}
+
+/*Carousel*/
+#dgt-announcements {
+	min-height: 60px;
+}
+
+#dgt-announcements .item.active {
+	background-color: transparent !important;
+}
+
+.dgt-announcements-header {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	z-index: 800;
+}
+
+.dgt-announcements-controls {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.dgt-announcements-number {
+	position: absolute;
+	top: -5px;
+	left: 176px;
+	z-index: 10;
+	background-color: #337ab7;
+}
+
+.dgt-announcements-minimize.collapsed   ~ .dgt-announcements-controls {
+	display: none;
+}
+
+.dgt-announcements-minimize {
+	position: absolute;
+	top: -1px;
+	left: 0;
+	padding-left: 210px;
+	font-size: 18px;
+	color: #337ab7;
+	z-index: 11;
+}
+
+.dgt-announcements-minimize .fa:after {
+	content: "\f147";
+}
+
+.dgt-announcements-minimize.collapsed .fa:after {
+	content: "\f196";
+}
+
+.dgt-announcements-control:hover,.dgt-announcements-control:focus {
+	text-decoration: none;
+}
+
+.dgt-announcements-title {
+	margin: 0;
+	color: #337ab7;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/* Colores del carousel */
+.unslider-control {
+	border: 0;
+	background: 0;
+	color: #d1d8de;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 1.25em;
+}
+
+.unslider-control:hover {
+	color: #337ab7;
+}
+
+.control-active {
+	color: #85CCF2;
+}
+
+.unslider-active .unslider-control .fa:before {
+	content: "\f111";
+	color: #85CCF2;
+}
+
+.unslider-stop,.unslider-start {
+	font-size: 1.75em;
+}
+
+/*Cajas*/
+.dgt-box {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.dgt-box ul,.dgt-box ol,.popover-content ul {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+/*Fondos*/
+.dgt-bg-light {
+	background-color: #f3f3f3;
+}
+
+.dgt-bg-dark {
+	color: #004488;
+	background-color: #d1d8de !important;
+}
+
+.dgt-bg-medium {
+	background-color: #e1e6e8;
+}
+
+.dgt-bg-applied {
+	background-color: #7da5e7;
+}
+
+.dgt-bg-notapplied {
+	background-color: #7ab571;
+}
+
+.dgt-bg-others {
+	background-color: #edc972;
+}
+
+/* badge info */
+.badge-info {
+	background-color: #337ab7;
+}
+
+/* Icono de campo obligatorio */
+label.mandatory:after {
+	display: inline-block;
+	font: normal normal 1em/1.15 FontAwesome;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	margin-right: .5em;
+	content: "\f069";
+	font-size: .5em;
+	margin-right: 0;
+	margin-left: 5px;
+	color: #aa4909;
+	vertical-align: text-top
+}

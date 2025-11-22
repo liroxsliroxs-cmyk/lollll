@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilos para el carrusel de TePuedeInteresar-formatter.jsp.*/
+
+/* Pinta de blanco los botones. */
+.tepuedeinteresar .owl-nav button {
+	color: white !important;
+}
+
+/* Impiden que los botones desaparezcan al cambiar de tamaño la pantalla.*/
+.tepuedeinteresar .owl-nav .owl-prev {
+	left: -3.5rem !important;
+}
+.tepuedeinteresar .owl-nav .owl-next {
+	right: -3.5rem !important;
+}
